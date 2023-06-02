@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hava Durumu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <div class="title">
+        <h2><span>Güncel</span> Hava Durumu</h2>
+    </div>
+
+
+    <div class="box">
+        <div class="box-wrapper">
+
+
+            <p class="error">Boş Değer Giremezsiniz!</p>
+            <label for=""> <span>Hava Durumu</span> 'nu öğrenmek istediğiniz <br> şehiri veya ülkeyi giriniz.</label>
+
+            <div class="konum">
+                <input placeholder="Konum Giriniz." type="text" id="weatherSearch">
+
+                <div id="search" class="search">
+                    <i class="fa-solid fa-location-dot fa-beat-fade" style="color: #edf03d;"></i>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="content">
+            <div class="city"></div>
+            <br>
+            <div class="temp"></div>
+            <div class="weather">
+                <img src="./img/clear.jpg">
+            </div>
+            <div class="weather2">
+                <img src="./img/parcali.jpeg" alt="">
+            </div>
+            <div class="weather3">
+                <img src="./img/rain.jpg" alt="">
+            </div>
+            <div class="weather4">
+                <img src="./img/kapali.jpg" alt="">
+            </div>
+            <div class="weather5">
+                <img src="./img/kar.jpg" alt="">
+            </div>
+            <div class="weather6">
+                <img src="./img/sisli.jpg" alt="">
+            </div>
+            <div class="desc"></div>
+            <div class="minmax"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <section class="footer">
+        <div class="bottom">
+            <span>The HTML The CSS The JavaScript </span>
+            <p> Deniz Yıldız</p>
+        </div>
+    </section>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

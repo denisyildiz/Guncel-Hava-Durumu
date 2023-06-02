@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@200&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url('./img/871230-Sky-Clouds.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Montserrat;
+    height: 110vh;
+}
+
+.title h2 {
+    font-size: 2.2rem;
+    text-shadow: 2px 2px black;
+    color: white;
+    position: relative;
+    top: 50px;
+}
+
+.title h2 span {
+    color: yellow;
+}
+
+
+
+.box {
+    background-color: white;
+    width: 600px;
+    height: 525px;
+    position: relative;
+    margin: auto;
+    top: 50px;
+    box-shadow: 1px 1px 10px black;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-bottom: 50px;
+
+}
+
+.box label {
+    font-family: Montserrat;
+    font-weight: bold;
+    position: relative;
+    top: 35px;
+    font-size: 1.2rem;
+
+}
+
+.box span {
+    color: yellow;
+    text-shadow: 1.5px 1.5px black;
+}
+
+.box input {
+    position: relative;
+    top: 70px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 0;
+    box-shadow: 1px 1px 10px black;
+    height: 25px;
+    width: 200px;
+    font-size: 0.8rem;
+    padding-left: 25px;
+    animation-name: inputefekt;
+    animation-duration: 1000ms;
+    cursor:pointer;
+}
+
+
+
+
+@keyframes inputefekt {
+    0% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.box input:hover {
+    transition: all 0.4s ease-in-out;
+    box-shadow: 1px 1px 20px black;
+}
+
+.box input:focus {
+    transition: all 0.4s ease-in-out;
+    width: 230px;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+.search {
+    display: inline;
+    position: relative;
+    top: 74px;
+    left: -35px;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+
+.content {
+    margin: 100px 0px;
+    position: relative;
+
+    font-weight: bold;
+}
+
+.content .desc{
+    margin:15px 0px;
+}
+
+.content .temp {
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: -20px;
+    font-size: 3rem;
+}
+
+.content .minmax {
+    font-size: 1.5rem;
+}
+
+img {
+    position: relative;
+
+    border-radius: 15px;
+    width: 120px;
+}
+
+
+.box .error {
+    animation-name: geciss;
+    animation-duration: 1s;
+    position: relative;
+
+    top: 35px;
+    color: red;
+    font-weight: bold;
+    text-shadow: 1px 0px black;
+}
+
+@keyframes geciss {
+    0% {
+        transform: translateX(-150px);
+
+    }
+
+    100% {
+        transform: translateX(0px);
+
+    }
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: -15px 0px;
+    z-index: 1;
+
+}
+
+.footer .bottom {
+    box-shadow: 1px 1px 10px black;
+    font-weight: 600;
+    opacity: 1;
+    color: black;
+    font-size: 14px;
+}
+
+.box-wrapper {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.konum {
+    position: relative;
+    display: flex;
+}
+
+.konum .search i {
+    position: absolute;
+    right: 10;
+    top: 5px;
+
+}
+
+
+@media(max-width:768px) {
+    .box {
+        max-width: 400px;
+    }
+
+}
+
+@media(max-width:576px) {
+    .box {
+        max-width: 370px;
+    }
+
+}
